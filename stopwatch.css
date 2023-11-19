@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40%;
+  margin-left: 10%;
+  border: 1px solid black;
+  height: 20rem;
+  width: 18rem;
+  background-color: #739072;
+}
+
+h1,
+.stopwatchBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.watch {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 45px;
+}
+
+.time {
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 8px;
+}
+
+.sec-to-hour {
+  font-size: 1.2rem;
+}
+
+.stopwatchBtn {
+  height: 3rem;
+  margin-top: 65px;
+  margin-left: 25px;
+}
+
+.strtBtn,
+.stpBtn,
+.rstBtn {
+  border: none;
+  margin-right: 25px;
+  height: 40px;
+  width: 70px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.strtBtn {
+  background-color: rgb(126, 203, 126);
+}
+
+.strtBtn:hover {
+  background-color: rgb(75, 177, 75);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.stpBtn {
+  background-color: rgb(206, 98, 90);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.stpBtn:hover {
+  background-color: rgb(189, 67, 58);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.rstBtn {
+  background-color: rgba(182, 201, 78, 0.856);
+}
+
+.rstBtn:hover {
+  background-color: rgba(166, 225, 83, 0.856);
+}
+
+.resetComfYes {
+  cursor: pointer;
+}
+
+.resetComfNo {
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .main {
+    width: 24rem;
+    height: 20rem;
+    margin-top: 26%;
+    margin-left: 20%;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .watch {
+    margin-right: 16px;
+  }
+
+  .time {
+    font-size: 35px;
+    padding-right: 10px;
+  }
+
+  .sec-to-hour {
+    font-size: 18px;
+  }
+
+  .stopwatchBtn {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .strtBtn,
+  .stpBtn,
+  .rstBtn {
+    height: 40px;
+    width: 70px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 24%;
+    border: 1px solid black;
+    height: 24rem;
+    width: 50%;
+    background-color: #739072;
+  }
+
+  h1 {
+    margin-top: 10px;
+    font-size: 50px;
+  }
+
+  .time {
+    font-size: 3rem;
+    padding: 0px 12px;
+  }
+
+  .sec-to-hour {
+    font-size: 1.4rem;
+  }
+
+  .stopwatchBtn {
+    height: 5rem;
+    margin-top: 65px;
+    margin-left: 25px;
+  }
+
+  .strtBtn,
+  .stpBtn,
+  .rstBtn {
+    width: 80px;
+    font-size: 18px;
+  }
+}
